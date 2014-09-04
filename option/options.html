@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Extension Options</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="option.css"/>
+		<link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+		<script src="jquery-1.8.2.min.js"></script>
+		<script src="jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="save.js"></script>
+	</head>
+	<body>
+		<div class="body">
+		<header data-role="header" data-theme="b">
+			<h1>PSO2 Chrome Extension Options</h1>
+		</header>
+		<section>
+			<br>
+			<legend id="message">Select the ship and desktop notification options.</legend>
+			<fieldset data-role="controlgroup">
+			<legend>Choose a ship:</legend>
+				 	<input type="radio" name="radio-choice" id="Ship01" value="Ship01"/>
+				 	<label for="Ship01">Ship01 フェオ</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship02" value="Ship02" />
+				 	<label for="Ship02">Ship02 ウル</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship03" value="Ship03" />
+				 	<label for="Ship03">Ship03 ソーン</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship04" value="Ship04" />
+				 	<label for="Ship04">Ship04 アンスール</label>
+				 
+				 	<input type="radio" name="radio-choice" id="Ship05" value="Ship05" />
+				 	<label for="Ship05">Ship05 ラグズ</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship06" value="Ship06" />
+				 	<label for="Ship06">Ship06 ケン</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship07" value="Ship07" />
+				 	<label for="Ship07">Ship07 ギョーフ</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship08" value="Ship08" />
+				 	<label for="Ship08">Ship08 ヴィン</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship09" value="Ship09" />
+				 	<label for="Ship09">Ship09 ハガル</label>
+				 	
+				 	<input type="radio" name="radio-choice" id="Ship10" value="Ship10" />
+				 	<label for="Ship10">Ship10 ナウシズ</label>
+		</fieldset>
+		<br>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<legend>Show Desktop Notifications:</legend>
+				<select name="flip-1" id="flip-1" data-role="slider">
+					<option value="0">Off</option>
+					<option value="1">On</option>
+				</select>
+			</div>
+			<div class="ui-block-b" style="text-align: right;">
+			<a id="save" data-role="button" data-inline="true" data-theme="b">Save changes</a>
+			</div>
+		</div>
+		<br>
+		</section>
+		<footer data-role="footer" data-theme="b">
+			<h2>Copyright &copy 2013 Arks-Layer</h2>
+		</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+{
+   "background": {
+      "scripts": [ "twitter.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/0.png",
+      "default_popup": "alert.html"
+   },
+   "content_scripts": [ {
+      "js": [ "pso2site/signup.js" ],
+      "matches": [ "https://iway.isao.net/sega/mail_sr.cgi?*", "https://iway.isao.net/sega/dupcheck*", "https://iway.isao.net/sega/dcws_signup*" ]
+   }, {
+      "js": [ "pso2site/confirmation.js" ],
+      "matches": [ "https://iway.isao.net/sega/sign_end.cgi*" ]
+   }, {
+      "js": [ "pso2site/productmenu.js" ],
+      "matches": [ "https://cha.isao.net/profile_oem/OEMProductMenu.php" ]
+   }, {
+      "js": [ "pso2site/pso2confirm.js" ],
+      "matches": [ "https://cha.isao.net/profile_oem/OEMPrdRegistConfirm.php" ]
+   }, {
+      "js": [ "pso2site/pso2complete.js" ],
+      "matches": [ "https://cha.isao.net/profile_oem/OEMPrdRegistCode.php" ]
+   }, {
+      "js": [ "pso2site/payinput.js" ],
+      "matches": [ "https://cha.isao.net/purchase_oem/OEMChk.php" ]
+   }, {
+      "js": [ "pso2site/pso2login.js" ],
+      "matches": [ "https://cha.isao.net/profile_oem/OEMLogin.php?product_name=pso2", "https://cha.isao.net/profile_oem/OEMLogin.php?product_name=sega" ]
+   }, {
+      "js": [ "pso2site/typewriter.js" ],
+      "matches": [ "http://www.lexilogos.com/keyboard/hiragana.htm" ]
+   }, {
+      "js": [ "pso2site/mainpage.js" ],
+      "matches": [ "https://cha.isao.net/profile_oem/OEMAuthChk.php", "https://cha.isao.net/profile_oem/OEMUsrPrfMenu.php" ]
+   }, {
+      "js": [ "pso2site/pso2paymenu.js" ],
+      "matches": [ "https://cha.isao.net/purchase_oem/OEMTmpl2Show2.php" ]
+   }, {
+      "js": [ "pso2site/shopitems.js" ],
+      "matches": [ "http://pso2.jp/players/catalog/acshop/" ]
+   }, {
+      "js": [ "pso2site/trouble.js" ],
+      "matches": [ "https://ssl.pso2.jp/players/support/inquiry/?mode=trouble" ]
+   } ],
+   "description": "Provides notifications for PSO2 EQ's in the browser",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCK0IkyDodatGQCSKiJj4diqceN/Le/ocQ1/cOtaZkBP07fO4uxB6tUsm5RLq5CNRRrUlVNwEc4Qs0UhF9So6vWLcgZzipmOv/znva7QZbGeQ6EQ+v/P7bB9lsuIazoZi3R5O7/Qh24UMv0PKUwmp491+E9rxreaFesaL205pzVQIDAQAB",
+   "manifest_version": 2,
+   "name": "PSO2 Extension",
+   "options_page": "option/options.html",
+   "permissions": [ "http://arks-layer.com/twitter/getEQ.php*", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.51"
+}
